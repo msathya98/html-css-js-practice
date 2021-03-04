@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .democlass {
+            color: blue;
+            font-size: 60px;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Haii</h1>
+   <button onclick="foo">Click me</button>
+    </div>
+    <script>
+        var divi = document.querySelector('div');
+        var btn = document.querySelector('button');
+        var p = document.createElement('p');
+       
+        divi.appendChild(p);
+        var para = document.querySelector('p');
+        p.textContent = "awesome";
+        
+        var copy = para.cloneNode(true);
+        divi.appendChild(copy);
+        btn.addEventListener('click', foo);
+        function foo() {
+            document.getElementsByTagName("H1")[0].setAttribute("class", "democlass"); 
+        }
+        
+    </script>
+    
+</body>
+</html>
+
