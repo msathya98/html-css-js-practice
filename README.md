@@ -6,16 +6,14 @@
 -There are mainly two types in HTML elements 
 -1.Block-level Elements
 -A block-level element always starts on a new line. Block-level element always takes up the full width available. It has a top and a bottom ---margin, whereas an inline element does not.
--Example: 
-//<div>Helloworld</div>
-//<address>, <h1>, <aside>, <main> , <nav> and etc
+-Example: div, address, h1, aside, main, nav etc
+
 
 - 2.Inline Elements
 -An inline element does not start on a new line. An inline element only takes up as much width as necessary. 
 -Example:
 <span> tag is good example for Inline-element.
-//span>Hello Sathya</span>
-//<a>, <button>, <label>, <textarea> , <input> etc.
+ a, button, label, textarea, input etc.
 
 ### 2 What are semantic Elements- significance?
 1. Semantic Elements in HTML
@@ -75,7 +73,7 @@ It cancels the previous watchPosition() call
 ### How to specify headers in an HTML page?
 HTML headings are titles or subtitles that you want to display on a webpage.
 There are 6 headings tags from <h1> to <h6>
-//<h1> defines the most important heading. <h6> defines the least important heading.
+<h1> defines the most important heading. <h6> defines the least important heading.
 Example:
 <h1>This is Heading 1</h1>
 <h2>This is Heading 2</h2>
@@ -118,13 +116,7 @@ Content-box:
 Default. The width and height properties (and min/max properties) includes only the content. Border and padding are not included
 
 Border-box:
-The width and height properties (and min/max properties) includes content, padding and border
-Example: div {
-  box-sizing: border-box;
-  width: 50%;
-  border: 5px solid red;
-  float: left;
-}
+The width and height properties (and min/max properties) includes content, padding and border.
 
 
 
