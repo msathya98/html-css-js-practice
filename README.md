@@ -7,15 +7,15 @@
 -1.Block-level Elements
 -A block-level element always starts on a new line. Block-level element always takes up the full width available. It has a top and a bottom ---margin, whereas an inline element does not.
 -Example: 
--<div>Helloworld</div>
--<address>, <h1>, <aside>, <main> , <nav> and etc
+//<div>Helloworld</div>
+//<address>, <h1>, <aside>, <main> , <nav> and etc
 
 - 2.Inline Elements
 -An inline element does not start on a new line. An inline element only takes up as much width as necessary. 
 -Example:
--<span> tag is good example for Inline-element.
--<span>Hello Sathya</span>
--<a>, <button>, <label>, <textarea> , <input> etc.
+<span> tag is good example for Inline-element.
+//span>Hello Sathya</span>
+//<a>, <button>, <label>, <textarea> , <input> etc.
 
 ### 2 What are semantic Elements- significance?
 1. Semantic Elements in HTML
@@ -48,7 +48,7 @@ A hard drive or solid state drive directly attached to the device being referenc
 
 ### Name the headers in an http request?
 HTTP headers:
-The HTTP headers are used to pass additional information between the clients and the server through the request and response header. All the headers are case-insensitive, headers fields are separated by colon, key-value pairs in clear-text string format. The end of the header section denoted by an empty field header. 
+The HTTP headers are used to pass additional information between the clients and the server through the request and response header. 
 
 There are four types of HTTP headers:
 
@@ -75,7 +75,7 @@ It cancels the previous watchPosition() call
 ### How to specify headers in an HTML page?
 HTML headings are titles or subtitles that you want to display on a webpage.
 There are 6 headings tags from <h1> to <h6>
-<h1> defines the most important heading. <h6> defines the least important heading.
+//<h1> defines the most important heading. <h6> defines the least important heading.
 Example:
 <h1>This is Heading 1</h1>
 <h2>This is Heading 2</h2>
@@ -83,4 +83,105 @@ Example:
 <h4>This is Heading  4</h4>
 <h5>This is Heading 5</h5>
 <h6>This is Heading 6</h6>
+
+
+
+## CSS
+
+### 2.Positioning properties:
+CSS positioning properties are:
+1.Bottom:
+It is used to set the bottom margin edge for a positioned box.
+2.Clip:
+It is used to clip an absolutely positioned element.
+3.Cursor
+It is used to specify the type of cursors to be displayed.
+4.Left
+It sets a left margin edge for a positioned box.
+5.Right
+It is used to set a right margin edge for a positioned box.
+6.Top
+It is used to set a top margin edge for a positioned box.
+7.Overflow:
+This property is used to define what happens if content overflow an element's box.
+
+
+### 3.Box-sizing: Content-Box and Border-Box
+Box-sizing:
+The box-sizing property defines how the width and height of an element are calculated: should they include padding and borders, or not. By default it has a value as content-box .
+Syntax:
+box-sizing: content-box | border-box| initial | inherit;
+
+Content-box and Border-box are the two major property values of Box-sizing.
+
+Content-box:
+Default. The width and height properties (and min/max properties) includes only the content. Border and padding are not included
+
+Border-box:
+The width and height properties (and min/max properties) includes content, padding and border
+Example: div {
+  box-sizing: border-box;
+  width: 50%;
+  border: 5px solid red;
+  float: left;
+}
+
+
+
+### 4.display and visibility:
+1.display:
+The display property specifies the display behaviour (the type of rendering box) of an element.
+In HTML, the default display property value is taken from the HTML specifications or from the browser/user default style sheet. The default value in XML is inline, including SVG elements.
+CSS Syntax:
+Display: value;
+
+A. Inline:
+Displays an element as an inline element (like <span>). Any height and width properties will have no effect.
+B. Block:
+Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width.
+C. Inline-block:
+Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values
+
+2.visibility:
+The visibility property specifies whether or not an element is visible.  Default value of visibility is visible.
+CSS syntax:
+visibility: visible | hidden | collapse|initial|inherit;
+
+A. visible:
+This is Default value. The element is visible.
+B. hidden:
+ The element is hidden (but still takes up space).
+
+
+### 6. Media queries - Write only standard numbers for phone, tablet and Desktop?
+Media Query:
+Media query is a CSS technique introduced in CSS3. It uses the @media rule to include a block of CSS properties only if a certain condition is true.
+Example:
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+-> If the browser window is 600px or smaller, the background color will be lightblue:
+
+For phones:
+@media only screen and (min-width: 250px) {
+  /* For phones: */
+Body{
+Background-color: blue;
+}
+
+For Tablets:
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+Body{
+Background-color: green;
+}
+
+For Desktop:
+@media only screen and (min-width: 768px) {
+  /* For Desktops: */
+Body{
+Background-color: blue;
+}
 
