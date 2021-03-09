@@ -98,9 +98,9 @@ It cancels the previous watchPosition() call
 
 HTML headings are titles or subtitles that you want to display on a webpage.
 
-There are 6 headings tags from <h1> to <h6>
+There are 6 headings tags from h1 to h6
 
-<h1> defines the most important heading. <h6> defines the least important heading.
+h1 defines the most important heading. h6 defines the least important heading.
 
 Example:
 
@@ -152,11 +152,9 @@ box-sizing: content-box | border-box| initial | inherit;
 Content-box and Border-box are the two major property values of Box-sizing.
 
 Content-box:
-
 Default. The width and height properties (and min/max properties) includes only the content. Border and padding are not included
 
 Border-box:
-
 The width and height properties (and min/max properties) includes content, padding and border.
 
 
